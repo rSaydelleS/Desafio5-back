@@ -7,7 +7,7 @@ const BDconnect = async (req = null, res = null, next = null) => {
         try {next(); } catch (error) {    };
         return mongoose;
     } catch (error) {
-        console.error("falha oa se conectar ao banco de dados" + error);
+        console.error("Falha oa se conectar ao banco de dados" + error);
         return error;
     }
 }
